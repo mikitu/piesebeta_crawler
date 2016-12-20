@@ -1,0 +1,10 @@
+hash: 7427a778359034f4428461235ac980a20f220404bff62ee7c957ff9de7d11949
+updated: 2016-12-19T07:21:17.457809484Z
+imports:
+- name: github.com/jinzhu/gorm
+  version: 5174cc5c242a728b435ea2be8a2f7f998e15429b
+- name: github.com/spf13/viper
+  version: 5ed0fc31f7f453625df314d8e66b9791e8d13003
+- name: github.com/streadway/amqp
+  version: cb4fb930736ebd61a54da180a6aa4e92b206ff13
+testImports: []
