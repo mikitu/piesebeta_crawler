@@ -8,10 +8,15 @@ import (
 	"bytes"
 )
 
-func NewMessagePublishTask(message []string, queueName string) *MessagePublishTask{
+func NewMessagePublishModelTask(message []string, queueName string) *MessagePublishTask{
 	msg := map[string]string{"year":message[0], "url": message[1], "model": message[2]}
 	t := &MessagePublishTask{msg: msg, queueName: queueName}
 	return t
+}
+type MessageModelsTask struct{
+	Model string `json:"model"`
+	Year string `json:"year"`
+	Url string `json:"url"`
 }
 type MessagePublishTask struct{
 	msg map[string]string
